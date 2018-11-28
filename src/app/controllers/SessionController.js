@@ -15,7 +15,6 @@ class SessionController {
     }
 
     return res.json({ user, token: User.generateToken(user) })
-
   }
 }
 

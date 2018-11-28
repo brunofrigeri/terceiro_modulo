@@ -23,4 +23,7 @@ routes.delete('/ads/:id', handle(controllers.AdController.destroy))
 //Purchase
 routes.post('/purchases', validate(validators.Purchase), handle(controllers.PurchaseController.store))
 
+routes.post('/purchases/:id', handle(controllers.PurchaseController.sell))
+
+
 module.exports = routes;
